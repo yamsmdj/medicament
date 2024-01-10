@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body , nav .container-fluid{
+    background: hsl(283, 46%, 31%) !important;
+}
+/* HEADER */
+a.nav-link {
+    color: white;
+    font-size: 26px;
+    font-weight: 900;
+}
+/* 
+.container_tourniquet{
+    background-color: #cc96e1;
+}
+.tourniquet{
+    display: flex;  
+    position: relative;
+    width: 90%;
+    height: 350px;
+    padding: 30px;
+    margin: auto;
+    color: #5F2B73;
+
+}
+p{
+    padding: 20px;  
+}
+.bonbon{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    height: 300px;
+}
+
+.magicChocolate{
+    width: 30%;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px ;
+    font-size: 26px;
+}
+
+     */
