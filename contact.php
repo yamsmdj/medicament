@@ -40,73 +40,114 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Formulaire de Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Formulaire de Contact</title>
+
     <style>
-        body {
-            background-color: #5F2B73;
-            margin: 0;
-        }
+body {
+    background-color: #5F2B73;
+    margin: 0;
+    color : white;
+    padding: 70px
+}
+.contact-container {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 150px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
 
-        .contact-form {
-            width: 100%;
-            max-width: 600px;
-            margin: 150px auto;
-            padding: 0 15px;
-            box-sizing: border-box;
-            border-left: 30px solid #5F2B73;
-            color: white;
-        }
+.TEXTE1 {
+    text-align: right;
+    vertical-align : center;
+    align-items: center;
+    position:relative;
+    left:450px;
+    justify-content:space-between
+}
 
-        .contact-form fieldset {
-            border: none;
-            padding: 0;
-            margin: 0;
-        }
+.H1 {
+    font-size :large;
 
-        .contact-form label {
-            display: block;
-            margin-bottom: 5px;
-        }
+}
 
-        .contact-form input[type="text"],
-        .contact-form input[type="tel"],
-        .contact-form input[type="message"],
-        .contact-form input[type="email"],
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            font-size: 16px;
-        }
+.fondue.img {
 
-        .contact-form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: gold;
-            color: #5F2B73;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+}
 
-        .contact-form input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+.contact-form {
+    flex: 1;
+    max-width: 600px;
+    padding: 70px;
+    box-sizing: border-box;
+    position:relative;
+    right:800px;
+}
 
-        @media screen and (min-width: 768px) {
-            .contact-form {
-                margin: 150px auto;
-            }
-        }
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="message"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: gold;
+    color: #5F2B73;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+   
+}
+
     </style>
 </head>
 <body>
-
+    <div class="contact-container">
+<div class="TEXTE1">
+            <h1> CONTACTEZ NOUS </h1>
+               <div class="fondue"> <img src="image/chocolat.png" alt="chocolat fondu"> </div>
+             <p> For questions, technical assistance,or collaboration opportunities via the contact information provided. </p>
+                <i class="fa-brands fa-instagram"></i> <p> @wonka_official </p>
+                <i class="fa-solid fa-phone"></i> <p> numéro de téléphone </p>
+                <i class="fa-solid fa-building"></i> <p> Usine Wonka, 5 rue du Chocolat.
+        </div>
     <form class="contact-form" action="traitement.php" method="post">
-        <h1> CONTACTEZ NOUS </h1>
         <fieldset>
             <label for="nom">Nom :</label>
             <input type="text" id="nom" name="nom" required><br>
@@ -126,6 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="submit" value="Envoyer">
         </fieldset>
     </form>
+</div>
 
 </body>
 </html>

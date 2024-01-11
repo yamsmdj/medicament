@@ -49,7 +49,7 @@
             <section class="cta-text">
                 <p>
                     <span class="me-3">La Magie se trouve ici </span>
-                    <button type="button" href="/index.php"class="btn btn-outline-light btn-rounded">Découvrir</button>
+                    <button type="button" href="/index.php" class="btn btn-outline-light btn-rounded">Découvrir</button>
                 </p>
             </section>
         </div>
