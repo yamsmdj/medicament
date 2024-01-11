@@ -2,24 +2,21 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nom = $_POST["nom"];
-    $prenom = $_POST["prenom"];
-    $telephone = $_POST["telephone"];
-    $email = $_POST["email"];
-    $message_text = $_POST["message"];
+    $destinataire = "votre@adresse-email.com"; 
+    $sujet = "Nouveau message du formulaire";
 
-    $message = "Nom: $nom\n";
-    $message .= "Prénom: $prenom\n";
-    $message .= "Téléphone: $telephone\n";
-    $message .= "Email: $email\n";
-    $message .= "Message: $message_text\n";
+    $message = "";
 
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
+    
+    foreach ($_POST as $key => $value) {
+        $label = ucfirst($key); 
+        $message .= "$label: $value\n";
+    }
+
+    $headers = "From: {$_POST['email']}\r\n";
+    $headers .= "Reply-To: {$_POST['email']}\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
-
- 
 
     if (mail($destinataire, $sujet, $message, $headers)) {
         echo "<p class='success'>E-mail envoyé avec succès !</p>";
