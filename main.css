@@ -18,9 +18,10 @@ a.nav-link {
     background-color: #cc96e1;
 }
 .tourniquet{
+    background-image: url('banniere_hypnose.png') ;
+    background-size: cover;
     display: flex;  
     position: relative;
-    width: 90%;
     padding: 30px;
     margin: auto;
     color: #5F2B73;
@@ -30,13 +31,14 @@ p{
 }
 .bonbon{
     position: absolute;
-    top: 0;
-    left: 60%;
-    height: 300px;
+    top: 20%;
+    right: 20%;
+    height: 250px;
 }
 
-.magicChocolate{
-    width: 50%;
+.magicChocolates{
+    width: 30%;
+    margin-left: 50px;
 }
 button{
     width: 200px;
@@ -75,15 +77,15 @@ textarea {
     width: 30%;
 }
 /* animation */
-.trait{
+/* .trait{
     max-width: 10px;
-}
-
+} */
+/* 
 @keyframes hypnose {
        0% { transform: rotate(0deg); } 
          100% { transform: rotate(360deg); 
         } }
-  .hypnose1, .hypnose2, .hypnose3, .hypnose4, .hypnose5, .hypnose6 {  
+  .hypnose1, .hypnose2, .hypnose3, .hypnose4, .hypnose5, .hypnose6, .hypnose7 , .hypnose8 , .hypnose9 , .hypnose10, .hypnose11  {  
     position: absolute;
     top: 50%;
     left: -9%;
@@ -98,16 +100,5 @@ textarea {
   .hypnose2 {   
     transform-origin: top right;
     animation: hypnose 40s linear infinite ;
-    animation-delay: .5s; }
-  .hypnose3 {   
-    transform-origin: top right;
-    animation: hypnose 40s linear infinite ;
-    animation-delay: 1s; }
-  .hypnose4 {   
-    transform-origin: top right;
-    animation: hypnose 40s linear infinite ;
-    animation-delay: 1.5s; }
-  .hypnose5 {   
-    transform-origin: top right;
-    animation: hypnose 40s linear infinite ;
-    animation-delay: 2s; }
+    animation-delay: .5s; } */
+ 
