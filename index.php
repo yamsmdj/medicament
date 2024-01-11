@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <main>
-<section class="container_tourniquet my-5">
+<section class="container_tourniquet  my-5">
     <div class="tourniquet">
         <div class="magicChocolates ">
                 <h2>ChocoMiracle de WONKA  : La medecine enchantée qui guerit par la magie du chocolat !</h2>
