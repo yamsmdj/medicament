@@ -47,6 +47,13 @@ button{
     box-shadow: 5px 5px 5px ;
     font-size: 26px;
 }
+textarea {
+    border-radius: 30px;
+} h1{
+    text-align: center;
+    font-size: 64px!important;
+    color: aliceblue!important;
+ }
 /* TEMOIGNAGE */
 .temoignages{
     display: flex;
