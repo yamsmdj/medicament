@@ -6,7 +6,7 @@
         <div class="magicChocolates ">
                 <h2>ChocoMiracle de WONKA  : La medecine enchantée qui guerit par la magie du chocolat !</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod culpa explicabo minus possimus magni exercitationem maiores accusantium tempora incidunt aut esse eius animi odit dolores excepturi voluptatum, maxime fugiat.</p>
-                <button>acheter</button>
+                <button>acheter</button> 
                 <picture>
                     <img src="image/bonbonWonka.png" alt="bonbonWonka" class="bonbon">
                 </picture>

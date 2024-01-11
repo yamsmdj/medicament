@@ -10,4 +10,4 @@
                     <a href="#" class="btn btn-primary">' . $value['prix'] . '</a>
                 </div>
             </div>'; 
-} ?>
+} ?> 
