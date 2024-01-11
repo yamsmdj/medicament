@@ -2,26 +2,15 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $destinataire = "votre@adresse-email.com"; 
-    $sujet = "Nouveau message du formulaire";
+    $to = "destination@example.com";
+    $subject = "Formulaire de contact";
+    $body = http_build_query($_POST);
+    $headers = "From: contact@example.com\r\n";
 
-    $message = "";
-
-    
-    foreach ($_POST as $key => $value) {
-        $label = ucfirst($key); 
-        $message .= "$label: $value\n";
-    }
-
-    $headers = "From: {$_POST['email']}\r\n";
-    $headers .= "Reply-To: {$_POST['email']}\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
-    $headers .= "MIME-Version: 1.0\r\n";
-
-    if (mail($destinataire, $sujet, $message, $headers)) {
-        echo "<p class='success'>E-mail envoyé avec succès !</p>";
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Le message a été envoyé avec succès.";
     } else {
-        echo "<p class='error'>Une erreur s'est produite lors de l'envoi de l'e-mail.</p>";
+        echo "Une erreur s'est produite lors de l'envoi du message.";
     }
 }
 ?>
@@ -47,7 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: flex;
             justify-content: center;
            
-            
         }
         label {
             display:flex;
@@ -79,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             background-color: #2f2f2f;
             color: white;
             cursor: pointer;
-            margin: 0 auto; /* Cela centre horizontalement le bouton */
+            margin: 0 auto; 
             display: block; 
         }
 
@@ -100,6 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .error {
             color: red;
         }
+
     </style>
 </head>
 <body>
