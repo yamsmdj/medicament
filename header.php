@@ -41,7 +41,7 @@ if (strpos($contact_page, $current_url) !== false) {
              <div class="collapse navbar-collapse" id="navbarNav">
                  <ul class="navbar-nav">
                      <li class="nav-item">
-                     <a class="nav-link " aria-current="page" href="#">Produits</a>
+                     <a class="nav-link " aria-current="page" href="/produits.php">Produits</a>
                      </li>
                      <li class="nav-item">
                       <a class="nav-link" href="#">A propos</a>
