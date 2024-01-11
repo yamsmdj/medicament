@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body , nav .container-fluid{
+    background: hsl(283, 46%, 31%) !important;
+}
+/* HEADER */
+a.nav-link {
+    color: white;
+    font-size: 26px;
+    font-weight: 900;
+}
+/* MAIN */
+.container_tourniquet{
+    background-color: #cc96e1;
+}
+.tourniquet{
+    display: flex;  
+    position: relative;
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    color: #5F2B73;
+}
+p{
+    padding: 20px;  
+}
+.bonbon{
+    position: absolute;
+    top: 0;
+    left: 60%;
+    height: 300px;
+}
+
+.magicChocolate{
+    width: 50%;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px ;
+    font-size: 26px;
+}
+/* TEMOIGNAGE */
+.temoignages{
+    display: flex;
+    flex-direction: column;
+}
+.temoignage{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+.temoignage_img{
+    width: 40%;
+    height: 100%;
+}
+.temoignage img{
+    width: 100%;
+}
+.temoignage p {
+    width: 30%;
+}
+/* animation */
+.trait{
+    max-width: 10px;
+}
+
+@keyframes hypnose {
+       0% { transform: rotate(0deg); } 
+         100% { transform: rotate(360deg); 
+        } }
+  .hypnose1, .hypnose2, .hypnose3, .hypnose4, .hypnose5, .hypnose6 {  
+    position: absolute;
+    top: 50%;
+    left: -9%;
+    clip-path: polygon(100% 0, 100% 0, 0 87%, 9% 100%);
+    background-color: #5F2B73;
+    width: 1200px;
+    height: 200px;
+ }
+  .hypnose1 {  
+    transform-origin: top right;
+    animation: hypnose 40s linear infinite; }
+  .hypnose2 {   
+    transform-origin: top right;
+    animation: hypnose 40s linear infinite ;
+    animation-delay: .5s; }
+  .hypnose3 {   
+    transform-origin: top right;
+    animation: hypnose 40s linear infinite ;
+    animation-delay: 1s; }
+  .hypnose4 {   
+    transform-origin: top right;
+    animation: hypnose 40s linear infinite ;
+    animation-delay: 1.5s; }
+  .hypnose5 {   
+    transform-origin: top right;
+    animation: hypnose 40s linear infinite ;
+    animation-delay: 2s; }
