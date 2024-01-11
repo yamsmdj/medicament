@@ -50,7 +50,7 @@ if (strpos($contact_page, $current_url) !== false) {
                       <a class="nav-link" href="#">Temoignage</a>
                      </li>
                       <li class="nav-item">
-                     <a class="nav-link " aria-disabled="true">Contactez nous</a>
+                     <a class="nav-link " href="/contact.php" aria-disabled="true">Contactez nous</a>
                     </li>
                  </ul>
             </div>
